@@ -17,3 +17,21 @@
 #
 # See .ai/examples-of-good/good-variable.tf for the canonical format.
 ###############################################################################
+
+###############################################################################
+# Observability
+###############################################################################
+
+variable "log_analytics_workspace_id" {
+  description = "Resource ID of the Log Analytics workspace to stream diagnostic logs and metrics to. Defaults to null; set this when diagnostic_settings_enabled is true so the module can wire diagnostic settings."
+  type        = string
+  default     = null
+
+  validation {
+    condition = var.log_analytics_workspace_id == null || can(regex(
+      "^/subscriptions/[^/]+/resourceGroups/[^/]+/providers/Microsoft.OperationalInsights/workspaces/[^/]+$",
+      var.log_analytics_workspace_id
+    ))
+    error_message = "log_analytics_workspace_id must be null or a valid Log Analytics workspace resource ID (/subscriptions/.../providers/Microsoft.OperationalInsights/workspaces/...)."
+  }
+}

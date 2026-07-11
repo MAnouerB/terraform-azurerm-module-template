@@ -1,6 +1,6 @@
 ---
 description: Add a Terratest case for an example
-argument-hint: <example-name>
+argument-hint: <example-name-from-examples-folder>
 ---
 
 Add or update a Terratest case that runs `examples/$1/` end-to-end on Azure.

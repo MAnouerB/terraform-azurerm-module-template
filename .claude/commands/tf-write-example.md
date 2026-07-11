@@ -1,6 +1,6 @@
 ---
 description: Create a new example under examples/
-argument-hint: <example-name>
+argument-hint: <example-name:basic|complete|with-cmk|with-ha|...>
 ---
 
 Create a new example folder `examples/$1/` demonstrating a specific usage

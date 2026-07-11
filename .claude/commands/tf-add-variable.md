@@ -1,6 +1,6 @@
 ---
 description: Add a new input variable following module conventions
-argument-hint: <variable-name> [type]
+argument-hint: <variable-name> <type> [section:general|configuration|network|security|observability]
 ---
 
 Add a new input variable named `$1` (type `$2` if provided, otherwise

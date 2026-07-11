@@ -1,5 +1,6 @@
 ---
 description: Self-review the current changes before pushing
+argument-hint: (no arguments — refreshes README, examples READMEs, and CHANGELOG)
 ---
 
 Perform a rigorous self-review of the current uncommitted changes as if

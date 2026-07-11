@@ -12,6 +12,8 @@ Once `1.0.0` is released, breaking changes will only occur on major version bump
 
 ### Added
 
+- New input variable `log_analytics_workspace_id` to specify the Log Analytics workspace that receives diagnostic logs and metrics.
+
 ### Changed
 
 ### Deprecated

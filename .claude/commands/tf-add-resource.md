@@ -1,6 +1,6 @@
 ---
 description: Add a new Azure resource to this module
-argument-hint: <resource-type> [purpose]
+argument-hint: <azurerm_resource_type> [target-file:main|network|security|observability]
 ---
 
 Add a new Azure resource of type `$1` to this module.
